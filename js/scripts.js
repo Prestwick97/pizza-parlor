@@ -39,7 +39,7 @@ $(document).ready(function(){
     pizza.prototype.getPrice = function() {
       return this.sizeCost() + this.toppingCost();
     }
-    $("#price").text("🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
+    $("#price").text("git🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
     
   });
 });
