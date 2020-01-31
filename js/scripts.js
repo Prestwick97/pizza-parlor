@@ -19,23 +19,20 @@ $(document).ready(function(){
     var topping = parseInt(countToppings);
     var price = 0;
     var newPizza = new pizza(size, topping);
-    console.log(size);
     
     pizza.prototype.sizeCost = function() {
-      if(this.size == "small"){
-        price + 10;
+      if(this.size === "small"){
+        return price + 10;
       }
-      else if(this.size == "medium") {
-        price + 11;
+      else if(this.size === "medium") {
+        return price + 11;
       }
-      else if(this.size == "large") {
-        price + 12;
-      }
-      else {
-        alert("Please select a size");
+      else if(this.size === "large") {
+        return price + 12;
       }
     }
-
+    console.log(newPizza.sizeCost());
+    
     pizza.prototype.toppingCost = function() {
       parseInt(price + topping);
     }
