@@ -1,3 +1,4 @@
+// Business logic
 function pizza(size, topping) {
 this.size = size,
 this.topping = topping
@@ -6,15 +7,12 @@ this.topping = topping
 
 
 
-
+// submission logic
 $(document).ready(function(){
   $("form#formPizza").submit(function(event){
     event.preventDefault();
-
     var checkboxes = $("input:checkbox[name=pizzaTopping]:checked");
     var countToppings = checkboxes.filter(':checked').length;
-    
-    
     var size = $("#pizzaSize").val();
     var topping = parseInt(countToppings);
     var price = 0;
@@ -31,7 +29,6 @@ $(document).ready(function(){
         return price + 12;
       }
     }
-    
     pizza.prototype.toppingCost = function() {
       return price + topping;
     }
@@ -40,6 +37,5 @@ $(document).ready(function(){
       return this.sizeCost() + this.toppingCost();
     }
     $("#price").text("git🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
-    
   });
 });
