@@ -6,7 +6,7 @@
 
 ## Description
 
-_A mystical website in which the user orders a pizza with options of size and toppings. The program will tell the user how much their order will cost in magical currency._
+_A mystical website in which the user orders a pizza with options of size and toppings. The program will tell the user how much their order will cost in magical currency. There may be more to features come._
 
 ## Setup/Installation Requirements
 
