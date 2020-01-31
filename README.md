@@ -15,3 +15,12 @@ User will be able to select multiple toppings.
 Program will give user a price for their pizza based on their preferences.
 * input: size: large, toppings: spinach, artichoke
 * output: *price*
+
+    <div class="form-group">
+      <select class="form-control" id="">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </div>
