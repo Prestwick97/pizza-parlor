@@ -1,7 +1,8 @@
 // Business logic
-function pizza(size, topping) {
+function pizza(size, topping, drinks) {
 this.size = size,
-this.topping = topping
+this.topping = topping;
+this.drinks = drinks
 }
 
 
@@ -11,13 +12,17 @@ this.topping = topping
 $(document).ready(function(){
   $("form#formPizza").submit(function(event){
     event.preventDefault();
-    var checkboxes = $("input:checkbox[name=pizzaTopping]:checked");
-    var countToppings = checkboxes.filter(':checked').length;
+// variables
     var size = $("#pizzaSize").val();
+    var toppingBoxes = $("input:checkbox[name=pizzaTopping]:checked");
+    var drinkBoxes = $("input:checkbox[name=drink]:checked");
+    var countToppings = toppingBoxes.filter(':checked').length;
+    var countDrinks = drinkBoxes.filter(':checked').length;
     var topping = parseInt(countToppings);
+    var drinks = parseInt(countDrinks);
     var price = 0;
-    var newPizza = new pizza(size, topping);
-    
+    var newPizza = new pizza(size, topping, drinks);
+// prototypes
     pizza.prototype.sizeCost = function() {
       if(this.size === "small"){
         return price + 10;
@@ -32,10 +37,13 @@ $(document).ready(function(){
     pizza.prototype.toppingCost = function() {
       return price + topping;
     }
-    
-    pizza.prototype.getPrice = function() {
-      return this.sizeCost() + this.toppingCost();
+    pizza.prototype.drinkCost = function() {
+      return price + drinks;
     }
+    pizza.prototype.getPrice = function() {
+      return this.sizeCost() + this.toppingCost() + this.drinkCost();
+    }
+    // price output message
     $("#price").text("git🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
   });
 });
