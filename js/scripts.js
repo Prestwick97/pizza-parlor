@@ -31,15 +31,15 @@ $(document).ready(function(){
         return price + 12;
       }
     }
-    console.log(newPizza.sizeCost());
     
     pizza.prototype.toppingCost = function() {
-      parseInt(price + topping);
+      return price + topping;
     }
+    
     pizza.prototype.getPrice = function() {
       return this.sizeCost() + this.toppingCost();
     }
-    // console.log(newPizza.getPrice());
+    console.log(newPizza.getPrice());
     
   });
 });
