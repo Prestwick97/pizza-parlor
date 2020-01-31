@@ -1,7 +1,7 @@
 body {
   text-align: center;
-  
+  background-image: url(https://i.pinimg.com/originals/15/59/67/1559679531def74c29c91306d1f4a5f0.jpg);
 }
-#pineapple {
-  font-family: fantasy;
+.form-group {
+font-family: fantasy;
 }
