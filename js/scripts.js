@@ -10,6 +10,7 @@ this.topping = topping
 $(document).ready(function(){
   $("form#formPizza").submit(function(event){
     event.preventDefault();
+
     var checkboxes = $("input:checkbox[name=pizzaTopping]:checked");
     var countToppings = checkboxes.filter(':checked').length;
     
@@ -18,10 +19,11 @@ $(document).ready(function(){
     var topping = parseInt(countToppings);
     var price = 0;
     var newPizza = new pizza(size, topping);
-
+    console.log(size);
+    
     pizza.prototype.sizeCost = function() {
       if(this.size == "small"){
-      price + 10;
+        price + 10;
       }
       else if(this.size == "medium") {
         price + 11;
@@ -35,7 +37,12 @@ $(document).ready(function(){
     }
 
     pizza.prototype.toppingCost = function() {
-      price + topping;
+      parseInt(price + topping);
     }
+    pizza.prototype.getPrice = function() {
+      return this.sizeCost() + this.toppingCost();
+    }
+    // console.log(newPizza.getPrice());
+    
   });
 });
