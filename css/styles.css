@@ -5,3 +5,34 @@ body {
 .form-group {
 font-family: fantasy;
 }
+#select {
+  background-color: violet;
+  opacity: 0.8;
+  margin-top: 10px;
+  padding: 20px;
+  font-weight: bolder;
+  color: black;
+  font-size: medium;
+  border-radius: 25px;
+}
+#pizzaSize {
+  background-color: violet;
+  opacity: 0.8;
+  color: black;
+  width: 610px;
+}
+#price {
+  background-color: violet;
+  opacity: 0.9;
+  color: black;
+  font-size: larger;
+  border-radius: 25px;
+}
+.img {
+  background-image: url(https://media2.giphy.com/media/126gcOW76FxgSA/giphy.gif);
+}
+#formPizza {
+  text-align: center;
+  margin-right: 280px;
+  margin-left: 280px;
+}
