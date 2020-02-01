@@ -44,6 +44,6 @@ $(document).ready(function(){
       return this.sizeCost() + this.toppingCost() + this.drinkCost();
     }
     // price output message
-    $("#price").text("git🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
+    $("#price").text("🔮✨✨Thank you! The price of your elegent pizza is: " + newPizza.getPrice() + " sparkles✨✨🔮");
   });
 });
