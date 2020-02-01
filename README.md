@@ -6,18 +6,21 @@
 
 ## Description
 
-_A mystical website in which the user orders a pizza with options of size and toppings. The program will tell the user how much their order will cost in magical currency. Choose as many toppings as you'd like. There may be more to features come._
+_A mystical website in which the user orders a pizza with options of size and toppings. The program will tell the user how much their order will cost in magical currency. Choose as many magical toppings or drinks as you'd like. There may be more to features come._
 
 ## Setup/Installation Requirements
 
-* _Open Terminal._
-* _Clone the respository in which this application is stored by following the next step._
-* _type: "git clone" and insert this link after that phrase in your terminal: https://github.com/Prestwick97/pizza-parlor.git.
-* _Press enter._
-* _Navigate to the folder in your desktop using your terminal ("cd pizza-parlor")_
-* _Open the html file using the command: "open index.html" in your terminal._
-* _The website should open in your default browser._
-* _Enjoy!_
+* _There are two options to get this magical site up and running._
+* _option 1:_
+  * _copy this link into your brower and press enter: https://github.com/Prestwick97/pizza-parlor.git_ 
+* _Option 2_
+  * _Open Terminal._
+  * _Clone the respository in which this application is stored by following the next step._
+  * _type: "git clone" and insert this link after that phrase in your terminal: https://github.com/Prestwick97/pizza-parlor.git, press enter._
+  * _Navigate to the folder in your desktop using your terminal ("cd pizza-parlor")_
+  * _Open the html file using the command: "open index.html" in your terminal._
+  * _The website should open in your default browser._
+  * _Enjoy!_
 
 ## Specs:
 
@@ -29,7 +32,7 @@ User will select which toppings they prefer.
 * iput: artichoke
 * output: topping 1
 
-User will be able to select multiple toppings.
+User will be able to select multiple toppings or beverages.
 * input: artichoke, pepperoni, salami
 * output: topping 1, 2, 3
 
